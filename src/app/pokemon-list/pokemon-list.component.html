@@ -1,0 +1,12 @@
+<div class="pokemon-list">
+ <app-pokemon-card *ngFor="let pokemon of pokemons" [cardData]="pokemon"
+  ></app-pokemon-card>
+</div>
+
+<mat-paginator>
+ [length]="pokemonsCount"
+ pageSize="20"
+ [pageSizeOptions]="20"
+ (page)="goToPage($event)"
+ showFirstLastButtons="true"
+</mat-paginator>
