@@ -12,6 +12,7 @@ export class PokemonListComponent implements OnInit {
   pokemonsCount: number;
 
   constructor(private httpClient: HttpClient) {}
+
   ngOnInit() {
     this.httpClient
       .get<any>("https://pokeapi.co/api/v2/pokemon")
@@ -23,9 +24,7 @@ export class PokemonListComponent implements OnInit {
   goToPage(page) {
     this.httpClient
       .get<any>(
-        "https://pokeapi.co/api/v2/pokemon?offset=" +
-          page.pageIndex * 20 +
-          "&limit=20"
+        "https://pokeapi.co/api/v2/pokemon?offset=" + page.pageIndex * 20 + "&limit=20"
       )
       .subscribe(response => {
         this.pokemons = response.results;
