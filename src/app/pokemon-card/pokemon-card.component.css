@@ -10,6 +10,10 @@
   padding: 5px;
 }
 
+.clickable {
+ cursor: pointer;
+}
+
 .electric {
   background-color: #f8d030;
 }
