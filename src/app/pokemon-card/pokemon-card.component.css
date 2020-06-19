@@ -2,7 +2,9 @@
   width: 10em;
   margin: 10px;
 }
+
 .pokemon-name { font-size: 15px }
+
 .pokemon-type {
   text-align: center;
   font-size: 0.75em;
@@ -44,7 +46,7 @@
 .flying {
   background-color: #a98ff3
 }
-.psyhic {
+.psychic {
   background-color: #f95587
 }
 .bug {

@@ -1,4 +1,13 @@
 <mat-toolbar color="primary">
-  <h3 class="pokemon-font">Pokepedia</h3>
+ <mat-toolbar-row>
+    <a routerLink="/">
+     <h3 class="pokemon-font">Pokepedia</h3>
+    </a>
+ </mat-toolbar-row>
+ <mat-toolbar-row>
+   <app-pokemon-search-form>
+   </app-pokemon-search-form>
+ </mat-toolbar-row>
 </mat-toolbar>
+
 <router-outlet></router-outlet>
